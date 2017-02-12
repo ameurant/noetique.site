@@ -1,11 +1,38 @@
 <article i18n:domain="noetique" class="entry">
-    <figure class="info-book">
-        <img class="img-book"
-             tal:attributes="src string: ${context/absolute_url}/@@images/cover/mini" />
-        <figcaption>
-            <a tal:attributes="href context/absolute_url" class="content-overlay">
-                <span tal:content="context/title">Title</span>
-            </a>
-        </figcaption>
-    </figure>
+    <a tal:attributes="href context/absolute_url">
+        <figure class="info-book">
+            <img class="img-book"
+                    tal:attributes="src string: ${context/absolute_url}/@@images/cover/mini" />
+            <figcaption>
+                <h5 tal:content="context/title">Title</h5>
+                <div>
+                    <strong>Année de publication :</strong> ${context/year}
+                </div>
+                <div>
+                    <strong>Editeur :</strong> ${context/publisher}
+                    <tal:if tal:condition="context/collection">
+                        -
+                        <strong>Collection :</strong> ${context/collection}
+                    </tal:if>
+                    <tal:if tal:condition="context/kind">
+                        -
+                        <strong>Genre :</strong> ${context/kind}
+                    </tal:if>
+                </div>
+                <div>
+                    <strong>Langue :</strong> ${context/langue}
+                    -
+                    <strong>Format :</strong> ${context/format}
+                    -
+                    <strong>Pages :</strong> ${context/pages}
+                </div>
+                <div tal:condition="context/audience">
+                    <strong>Public :</strong> ${context/audience}
+                </div>
+                <div>
+                    <strong>ISBN :</strong> ${context/isbn}
+                </div>
+            </figcaption>
+        </figure>
+    </a>
 </article>

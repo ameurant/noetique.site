@@ -1,0 +1,179 @@
+@media print {
+    a[href]:after {
+    content: "";
+    }
+    #portal-globalnav,
+    #portal-column-two,
+    #portal-top-texte,
+    #portal-footer-wrapper {
+        display: none;
+    }
+    header#portal-top-noetique,
+    section#portal-top-logo,
+    section#portal-top-texte {
+        height: 100px !important;
+        padding: 0px !important;
+    }
+    #main-container > #column1-container + div  {
+        width: 100% !important;
+    }
+    article#content {
+        border-right: none;
+    }
+}
+#portal-column-two .portlet-static-les-incontournables {
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+}
+#portal-column-two .portlet-static-les-incontournables .portletHeader {
+    color: #FFF;
+    background-color: #444750;
+    border-radius: 0px;
+    padding: 6px 15px;
+    font-size: 16px;
+    text-align: center;
+}
+#portal-column-two .portlet-static-les-incontournables .portletContent {
+    background-color: transparent;
+}
+#portal-column-two .portlet-static-les-incontournables .portletContent a {
+    color: #6b7777 !important;
+    font-weight: bold;
+    padding: 10px 15px !important;
+}
+#portal-column-two .portletWrapper:last-child {
+    margin-top: 50px;
+    background-color: #444750;
+    padding: 10px;
+}
+#portal-column-two .portletWrapper:last-child p {
+    margin-bottom: 0px;
+}
+#portal-column-two .portletWrapper:last-child a {
+    color: #FFF !important;
+}
+#portal-column-two .portletNavigationTree a.contenttype-plone-site {
+    color: #6b7777;
+    font-weight: bold;
+    padding-left: 12px;
+    background-color: #FCFCFD;
+}
+#portal-column-two .portletNavigationTree a.contenttype-plone-site {
+    border-top: none;
+}
+#portal-column-two .portletNavigationTree a.contenttype-plone-site::before {
+    width: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+#content #relatedItemBox {
+    background-color: #E6E4E4;
+    padding: 10px;
+}
+#content #relatedItemBox header {
+    font-size: 16px;
+}
+#content ul,
+#content ol {
+    padding-left: 15px;
+}
+
+
+
+#home-boxes .box {
+    margin: 0 0 30px;
+}
+
+#home-boxes .box > header {
+    /*text-transform: uppercase;*/
+    font-size: 14px;
+    background-color: #444750;
+    padding-top: 0.75rem;
+    padding-bottom: 0.30rem;
+}
+#home-boxes h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#home-boxes section {
+    margin-bottom: 15px;
+}
+#home-boxes #box-news img {
+    max-width: 125px;
+    width: auto;
+    float: right;
+}
+#home-boxes #box-books img {
+    width: 20%;
+}
+#home-boxes #box-books section {
+    margin-bottom: 20px;
+}
+#home-boxes #box-thought section a {
+    font-size: 16px;
+}
+#content nav.pagination a {
+    color: #8595AC !important;
+}
+#content nav.pagination li.active span {
+    background-color: #8595AC !important;
+    border-color: #8595AC !important;
+}
+body.template-facetednavigation_view #faceted-results > div > nav.pagination:first-child {
+    display: none;
+}
+}
+body.template-summary_view h2 {
+    font-size: 22px;
+}
+body.template-album_view .photoAlbumEntryTitle {
+    display: block;
+    padding-top: 10px;
+}
+
+
+#portal-footer-wrapper {
+    background-color: #444750;
+    color: #FFF;
+    padding: 10px 0px 0px;
+}
+#portal-footer-wrapper a {
+    color: #FFF !important;
+}
+#portal-footer-wrapper ul {
+    list-style-type: none;
+}
+#portal-footer-wrapper ul li {
+    display: inline-block;
+    padding-right: 30px;
+    height: 38px;
+}
+#portal-footer-wrapper ul li span {
+    display: inline-block;
+    height: 38px;
+    width:38px;
+    background-image:url('/++theme++noetique/images/sprite_footer.png');
+    background-repeat:no-repeat;
+}
+#portal-footer-wrapper ul li a {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+    padding-left: 7px;
+}
+#portal-footer-wrapper ul li#footer-rss span {
+    background-position: -40px 0;
+}
+#portal-footer-wrapper ul li#footer-print span {
+    background-position: -80px 0;
+}
+#portal-footer-wrapper ul li#footer-plone span {
+    background-position: -120px 0;
+}
+#portal-footer-wrapper .portletWrapper:first-child {
+    border-bottom: none;
+    padding: 0px;
+    margin: 0px;
+}

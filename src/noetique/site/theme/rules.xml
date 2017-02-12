@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <xi:include href="++theme++barceloneta/rules.xml" />
+
+    
+        
+    <after css:theme-children="head">
+        <link href="++theme++noetique/noetique.css" type="text/css" rel="stylesheet" />
+    </after>
+    
+    <drop css:content=".searchSection" />
+    <drop css:content="#portal-logo" />
+    <drop css:content="#portal-header" />
+    <drop css:content="#portal-anontools" />
+    
+    <replace css:content-children="#portal-searchbox"
+             css:theme-children="#portal-searchbox" />
+    <replace css:content="#portal-searchbox .searchButton">
+        <input class="searchButton" value="OK" type="submit" />
+    </replace>
+
+    <replace css:content-children="#portal-footer-wrapper div.row">
+      <ul>
+        <li id="footer-rss">
+          <span />
+          <a href="http://www.noetique.eu/RSS" id="footer-rss">RSS - Suivre les nouvelles publications</a>
+        </li>
+        <li id="footer-print">
+          <span />
+          <a href="javascript:this.print();">Imprimer cette page</a>
+        </li>
+        <li id="footer-plone">
+          <span />
+          <a href="http://www.plone.com" >Réalisé avec Plone</a>
+        </li>
+      </ul>
+    </replace>
+    
+</rules>

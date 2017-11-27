@@ -9,7 +9,7 @@ Development
 
 ::
 
-    git clone https://github.com/sverbois/noetique.site.git
+    git clone https://github.com/ameurant/noetique.site.git
     cd noetique.site
     virtualenv-2.7 .
     ./bin/pip install -U setuptools

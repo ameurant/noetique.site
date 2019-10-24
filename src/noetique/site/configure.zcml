@@ -10,15 +10,20 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="noetique.site"
+      title="noetique"
       directory="profiles/default"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <i18n:registerTranslations directory="locales"/>
 
   <include package=".browser"/>
   <include package=".book"/>
-  <include package=".transmogrifier" zcml:condition="installed transmogrify.dexterity"/>
+  <include package=".transmogrifier"
+           zcml:condition="installed transmogrify.dexterity"/>
+
+  <plone:static type="theme"
+                name="noetique"
+                directory="theme"/>
 
 </configure>

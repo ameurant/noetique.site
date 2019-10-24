@@ -7,21 +7,28 @@
 
     <xi:include href="++theme++barceloneta/rules.xml" />
 
-    
-        
+
+
     <after css:theme-children="head">
-        <link href="++theme++noetique/noetique.css" type="text/css" rel="stylesheet" />
+        <link href="{$navigation_root_url}/++theme++noetique/css/style.css"
+              type="text/css"
+              rel="stylesheet" />
+        <link href="{$navigation_root_url}/++theme++noetique/css/noetique.css"
+              type="text/css"
+              rel="stylesheet" />
     </after>
-    
+
     <drop css:content=".searchSection" />
     <drop css:content="#portal-logo" />
     <drop css:content="#portal-header" />
     <drop css:content="#portal-anontools" />
-    
+
     <replace css:content-children="#portal-searchbox"
              css:theme-children="#portal-searchbox" />
     <replace css:content="#portal-searchbox .searchButton">
-        <input class="searchButton" value="OK" type="submit" />
+        <input class="searchButton"
+               value="OK"
+               type="submit" />
     </replace>
 
     <replace css:content-children="#portal-footer-wrapper div.row">
@@ -40,5 +47,5 @@
         </li>
       </ul>
     </replace>
-    
+
 </rules>

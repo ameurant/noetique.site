@@ -177,3 +177,12 @@ body.template-album_view .photoAlbumEntryTitle {
     padding: 0px;
     margin: 0px;
 }
+
+
+/*** AGENDA ***/
+.documentFirstHeading{
+    color:#f00;
+}
+.timezone{
+    display:none;
+}

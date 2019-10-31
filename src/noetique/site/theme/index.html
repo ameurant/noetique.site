@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Plone Theme</title>
+    <title>Noetique</title>
     <link rel="shortcut icon" type="image/x-icon"
           href="barceloneta-favicon.ico" />
     <link rel="apple-touch-icon"
@@ -21,66 +21,80 @@
     <section id="portal-toolbar">
     </section>
     <div class="outer-wrapper">
-      
-      <header id="content-header">
-        <header id="top-over-portal-top">
-            <div class="container">
-                <section id="top-texte-expertise"><a href="/">Expertise & Prospective dans le monde réel</a></section>
-                <section id="top-texte-nom"><a href="/">Marc Halévy</a></section>
-                <section id="portal-searchbox"></section>
-                <div class="stop-float"></div>
-            </div>
+
+        <header id="content-header">
+            <header id="top-over-portal-top">
+                <div class="container">
+                    <div class="flex-box justify-content-space-between">
+                        <div>
+                            <section id="top-texte-expertise">
+                                <a href="/">Expertise & Prospective dans le monde réel</a>
+                            </section>
+                            <section id="top-texte-nom">
+                                <a href="/">Marc Halévy</a>
+                            </section>
+                        </div>
+                        <div>
+                            <section id="portal-searchbox"></section>
+                        </div>
+                    </div><!--flex-box-->
+                </div>
+            </header>
+
+            <a href="/"><header id="portal-top-noetique">
+                <div class="container">
+                    <section id="portal-top-logo">
+                        <span id="top-prenom">Marc</span>
+                        <span id="top-nom">HALEVY</span>
+                    </section>
+                    <section id="portal-top-texte">
+                        <span id="tisserand">Tisserand de la compréhension du devenir</span><br />
+                        <span id="conferencier">Conférencier, expert et auteur</span>
+                    </section>
+                    <div class="stop-float"></div>
+                </div>
+                </header>
+            </a>
+
+            <header id="portal-top"></header>
+
+            <div id="anonymous-actions"></div>
         </header>
-        
-        
-        <a href="/"><header id="portal-top-noetique">
-            <div class="container">
-                <section id="portal-top-logo">
-                    <span id="top-prenom">Marc</span>
-                    <span id="top-nom">HALEVY</span>
-                </section>
-                <section id="portal-top-texte">
-                    <span id="tisserand">Tisserand de la compréhension du devenir</span><br />
-                    <span id="conferencier">Conférencier, expert et auteur</span>
-                </section>
-                <div class="stop-float"></div>
+<!--
+        <div id="mainnavigation-wrapper">
+            <div id="mainnavigation">
             </div>
-        </header></a>
-        
-        <header id="portal-top"></header>
-        
-        <div id="anonymous-actions"></div>
-      </header>
-      <div id="mainnavigation-wrapper">
-        <div id="mainnavigation">
         </div>
-      </div>
-      <div id="hero" class="principal">
+-->
+        <div id="hero" class="principal">
+            <div class="container">
+                <div class="gigantic">
+                </div>
+            </div>
+        </div>
+
+        <div id="above-content-wrapper">
+            <div id="above-content">
+            </div>
+        </div>
+
         <div class="container">
-          <div class="gigantic">
-          </div>
-        </div>
-      </div>
-      <div id="above-content-wrapper">
-          <div id="above-content">
-          </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <aside id="global_statusmessage"></aside>
-        </div>
-        <main id="main-container" class="row row-offcanvas row-offcanvas-right">
-          <div id="column1-container">
-          </div>
-          <div id="content-container">
-          </div>
-          <div id="column2-container">
-          </div>
-        </main><!--/row-->
-      </div><!--/container-->
+            <div class="row">
+                <aside id="global_statusmessage"></aside>
+            </div>
+            <main id="main-container" class="row row-offcanvas row-offcanvas-right">
+                <div id="column1-container">
+                </div>
+                <div id="content-container">
+                </div>
+                <div id="column2-container">
+                </div>
+            </main><!--/row-->
+        </div><!--/container-->
     </div> <!--/outer-wrapper -->
+
     <footer id="portal-footer-wrapper">
-      <div class="container" id="portal-footer"></div>
+        <div class="container" id="portal-footer"></div>
     </footer>
   </body>
 </html>

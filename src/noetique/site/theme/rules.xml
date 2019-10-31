@@ -13,9 +13,6 @@
         <link href="{$navigation_root_url}/++theme++noetique/css/style.css"
               type="text/css"
               rel="stylesheet" />
-        <link href="{$navigation_root_url}/++theme++noetique/css/noetique.css"
-              type="text/css"
-              rel="stylesheet" />
     </after>
 
     <drop css:content=".searchSection" />

@@ -37,11 +37,12 @@
           <tal:date replace="structure python:view.formatted_date(context)" />
           <br /><br />
 
+<!--
           <span class="timezone"
               tal:condition="start_tzname">
             (<tal:tzname replace="start_tzname">timezone name</tal:tzname> / UTC<tal:tzoffset replace="start_utcoffset" />)
           </span>
-
+-->
         </span>
       </li>
     </tal:cond>

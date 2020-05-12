@@ -102,6 +102,41 @@
                     <a href="https://www.youtube.com/channel/UCplO3-iuNvhEinVj8Sxh6XA">Chaîne Youtube de Marc Halévy</a>
                 </footer>
             </section>
+            <section id="box-bebooda" class="box">
+                <header>
+                    Webinaires & Masterclasses
+                </header>
+                <p>
+                <img id="lunette-verte"
+                     src="/++theme++noetique/images/lunette_verte_120.png" />
+                Pour comprendre ce qui arrive !<br />
+                <span class="texte-vert">
+                    Voir et agir avec les lunettes vertes.<br />
+                    Se hisser sur "<em>la courbe verte</em>" du nouveau monde.<br />
+                </span>
+                Tous publics, entrepreneurs, dirigeants, formateurs,…<br />
+                </p>
+                <ul id="liste-bebooda">
+                    <li>
+                        <i class="fas fa-hand-point-right texte-vert"></i>
+                        <a href="https://www.lacabaneverte.fr/programme-des-lecons-de-la-courbe-verte/"
+                           target="_blank">
+                           Participer aux séminaires résidentiels
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-hand-point-right texte-vert"></i>
+                        <a href="https://bebooda.fr/"
+                           target="_blank">
+                            Aussi à suivre en ligne sur <br />
+                            <img id="logo-bebooda"
+                                 src="/++theme++noetique/images/logo_bebooda_blanc_300x45.png" />
+                        </a>
+                    </li>
+                </ul>
+                <footer>
+                </footer>
+            </section>
             <section id="box-books" class="box" tal:define="books view/last_books">
                 <header>
                     En librairie

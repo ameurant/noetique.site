@@ -234,17 +234,22 @@ section.portletNavigationTree.portlet {
     font-weight: bold;
     padding: 10px 15px !important;
 }
-#portal-column-two .portletWrapper:last-child {
+
+#portal-column-two .portletWrapper #contactez-marc-halevy-portlet,
+#suivez-marc-halevy-portlet {
     margin-top: 50px;
     background-color: #444750;
     padding: 10px;
 }
-#portal-column-two .portletWrapper:last-child p {
+#portal-column-two .portletWrapper #contactez-marc-halevy-portlet p,
+#suivez-marc-halevy-portlet p {
     margin-bottom: 0px;
 }
-#portal-column-two .portletWrapper:last-child a {
+#portal-column-two .portletWrapper #contactez-marc-halevy-portlet a,
+#suivez-marc-halevy-portlet a {
     color: #FFF !important;
 }
+
 #portal-column-two .portletNavigationTree a.contenttype-plone-site {
     color: #6b7777;
     font-weight: bold;
@@ -360,6 +365,23 @@ div.home-boxes-column-right{
 
 #home-boxes section#box-video iframe{
     width:100%;
+}
+
+#home-boxes section#box-bebooda img#lunette-verte{
+    float: right;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+#home-boxes section#box-bebooda img#logo-bebooda{
+    display:block;
+    margin:auto;
+}
+#home-boxes section#box-bebooda .texte-vert{
+    color: #26b34b;
+}
+#home-boxes section#box-bebooda #liste-bebooda{
+    margin-left: 25px;
+    list-style-type: none;
 }
 
 #home-boxes #box-books > section {

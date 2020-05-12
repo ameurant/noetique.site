@@ -13,6 +13,8 @@
         <link href="{$navigation_root_url}/++theme++noetique/css/style.css"
               type="text/css"
               rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a9e2b35dcb.js"
+                crossorigin="anonymous"></script>
     </after>
 
     <drop css:content=".searchSection" />
@@ -46,3 +48,4 @@
     </replace>
 
 </rules>
+

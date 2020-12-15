@@ -15,7 +15,7 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
     ],
-    author='Sébastien Verbois',
+    author='Sébastien Verbois :: Netvaast',
     author_email='sebastien.verbois@gmail.com',
     url='https://github.com/sverbois/noetique.site',
     license='GPL version 2',
@@ -27,6 +27,9 @@ setup(
     install_requires=[
         'plone.api',
         'plone.app.dexterity',
+        'plone.formwidget.recaptcha',
+        'eea.facetednavigation',
+        'collective.easyform',
         'setuptools',
         'z3c.jbot',
     ],

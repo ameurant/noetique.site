@@ -213,23 +213,30 @@ section.portletNavigationTree.portlet {
 
 
 /*** PORTAL COLUMN ***/
-#portal-column-two .portlet-static-les-incontournables {
+#portal-column-two .portlet-static-les-incontournables,
+#portal-column-two {
     border-radius: 0px;
     box-shadow: none;
     border: none;
 }
-#portal-column-two .portlet-static-les-incontournables .portletHeader {
+#portal-column-two .portlet-static-les-incontournables .portletHeader,
+#portal-column-two .portlet-collection-agenda .portletHeader{
     color: #FFF;
     background-color: #444750;
     border-radius: 0px;
     padding: 6px 15px;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
 }
-#portal-column-two .portlet-static-les-incontournables .portletContent {
+#portal-column-two .portlet-collection-agenda .portletHeader a{
+    color: #FFF;
+    }
+#portal-column-two .portlet-static-les-incontournables .portletContent,
+#portal-column-two .portlet-collection-agenda .portletContent {
     background-color: transparent;
 }
-#portal-column-two .portlet-static-les-incontournables .portletContent a {
+#portal-column-two .portlet-static-les-incontournables .portletContent a,
+#portal-column-two .portlet-collection-agenda .portletContent a {
     color: #6b7777 !important;
     font-weight: bold;
     padding: 10px 15px !important;

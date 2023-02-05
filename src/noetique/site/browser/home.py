@@ -112,10 +112,10 @@ class HomeView(BrowserView):
             review_state='published',
             sort_on='effective',
             sort_order='reverse',
-            sort_limit=3
+            sort_limit=5
         )
         books =[]
-        for b in brains[:3]:
+        for b in brains[:5]:
             obj = b.getObject()
             book = {
                 'title': obj.title,

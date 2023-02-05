@@ -75,16 +75,20 @@
         <div class="home-boxes-column-right">
             <section id="box-thought" class="box" tal:define="thought view/last_thought" tal:condition="thought">
                 <header>
-                    Pensées
+                    Journal philosophie et spirituel
                 </header>
                 <section>
+                    <!--
                     <p>
                         Journal philosophique et spirituel de Marc Halévy
                     </p>
+                    -->
                     <p>
                         <a href="${thought/url}">${thought/title}</a>
                     </p>
-
+                    <p>
+                        ${thought/description}
+                    </p>
                 </section>
                 <footer>
                     <a href="journal">Tout le journal</a>
@@ -92,7 +96,7 @@
             </section>
             <section id="box-video" class="box" tal:define="video view/last_video" tal:condition="video">
                 <header>
-                    Dernière vidéo
+                    Visioconférences
                 </header>
                 <section>
                     <iframe  frameborder="0" allowfullscreen width="100%"
@@ -102,6 +106,7 @@
                     <a href="https://www.youtube.com/channel/UCplO3-iuNvhEinVj8Sxh6XA">Chaîne Youtube de Marc Halévy</a>
                 </footer>
             </section>
+            <!--
             <section id="box-bebooda" class="box">
                 <header>
                     Webinaires & Masterclasses
@@ -137,6 +142,7 @@
                 <footer>
                 </footer>
             </section>
+            -->
             <section id="box-books" class="box" tal:define="books view/last_books">
                 <header>
                     En librairie
@@ -152,6 +158,7 @@
                             <strong>Année</strong> : ${book/year}
                         </div>
                     </a>
+                    <hr />
                 </section>
                 <footer>
                     <a href="livres">Tous les livres</a>

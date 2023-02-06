@@ -409,9 +409,20 @@ div.home-boxes-column-right{
     float: right;
 }
 
+
+
+#home-boxes #box-thought{
+}
+
+#home-boxes #box-thought div.thought-content{
+    height: 250px;
+    overflow: hidden;
+}
+
 #home-boxes #box-thought section a {
     font-size: 16px;
 }
+
 
 
 

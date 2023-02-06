@@ -69,9 +69,13 @@
                     <p>
                         <a href="${thought/url}">${thought/title}</a>
                     </p>
+
                     <p>
                         ${thought/description}
                     </p>
+                    <div class="thought-content">
+                        <span tal:content="structure python:thought['text'].output_relative_to(view.context)" />
+                    </div>
                 </section>
                 <footer>
                     <a href="journal">Tout le journal</a>
@@ -82,7 +86,7 @@
                     Visioconférences
                 </header>
                 <section>
-                    <iframe  frameborder="0" allowfullscreen width="100%"
+                    <iframe frameborder="0" allowfullscreen width="100%"
                             tal:attributes="src string:https://www.youtube.com/embed/${video/video_id}" ></iframe>
                 </section>
                 <footer>

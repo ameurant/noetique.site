@@ -34,24 +34,7 @@
                     <a href="actualites">Toutes les actualités</a>
                 </footer>
             </section>
-            <section id="box-agenda" class="box" tal:define="events view/next_events">
-                <header>
-                    Agenda
-                </header>
-                <section tal:repeat="event events">
-                    <a href="${event/url}">
-                        <h5>${event/title}</h5>
-                        <p>
-                            ${event/location}
-                            <br />
-                            <span class="pat-moment" data-pat-moment="format:Do MMMM YYYY;">${event/start}</span>
-                        </p>
-                    </a>
-                </section>
-                <footer>
-                    <a href="agenda">Tout l'agenda</a>
-                </footer>
-            </section>
+
             <section id="box-articles" class="box" tal:define="articles view/last_articles">
                 <header>
                     Billets

@@ -57,6 +57,7 @@ class HomeView(BrowserView):
             'description': brain.Description,
             'url': brain.getURL(),
             'effective': brain.effective,
+            'text': obj.text,
             'has_image': True if obj.image else False,
         }
 
@@ -74,10 +75,12 @@ class HomeView(BrowserView):
             return None
 
         brain = brains[0]
+        obj = brain.getObject()
         return {
             'title': brain.Title,
             'description': brain.Description,
             'url': brain.getURL(),
+            'text': obj.text,
             'effective': brain.effective,
         }
 
@@ -98,6 +101,7 @@ class HomeView(BrowserView):
                 'title': b.Title,
                 'description': b.Description,
                 'start': b.start,
+                'text': obj.text,
                 'location': obj.location,
                 'url': b.getURL(),
             }
